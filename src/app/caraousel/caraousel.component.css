@@ -1,0 +1,12 @@
+/* carousel-item {
+    background-size: cover;
+    height: 10%;
+    width: 20%;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }

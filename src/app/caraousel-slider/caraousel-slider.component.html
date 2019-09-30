@@ -1,0 +1,17 @@
+<div id="carouselExampleSlidesOnly col-md-12" class="carousel slide" data-ride="carousel">
+    <div class="col-md-2 text-center">
+        <a class="btn btn-primary zindex-tooltip" (click)="togglePrevious()">PREVIOUS</a>
+    </div>
+    <div class="col-md-8">
+    <div class="carousel-inner img-fluid ">
+        <caraousel *ngFor="let img of slidingImages" [slidingImage]="img" (toogleImageEvents)="toggleImages()"></caraousel>
+    </div>
+    <ol class="carousel-indicators">
+        <li *ngFor="let img of slidingImages" class="{{ img.hide ? '' : 'active'}}"></li>
+    </ol>
+    </div>
+
+    <div class="col-md-2 text-center">
+        <a class="btn btn-primary zindex-tooltip" (click)="toggleNext()">NEXT</a>
+    </div>
+</div>
